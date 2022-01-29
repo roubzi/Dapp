@@ -138,25 +138,34 @@ const App = ({ isServerInfo }) => {
       </Router>
       <Footer style={{ textAlign: "center" }}>
         <Text style={{ display: "block" }}>
-          ⭐️ Please star this{" "}
+          ⭐️ Please star {" "}
           <a
-            href="https://github.com/ethereum-boilerplate/ethereum-boilerplate/"
+            href="https://github.com/roubzi/Dapp"
             target="_blank"
             rel="noopener noreferrer"
           >
-            boilerplate
+            Roubzi Dapp
           </a>
-          , every star makes us very happy!
+          , it's free and makes us very happy!
         </Text>
-
         <Text style={{ display: "block" }}>
-          🙋 You have questions? Ask them on the {""}
+          🎨 Want to buy our paintings ? {""}
           <a
             target="_blank"
             rel="noopener noreferrer"
-            href="https://forum.moralis.io/t/ethereum-boilerplate-questions/3951/29"
+            href="https://rescoe.fr"
           >
-            Moralis forum
+            Rescoe Art Gallery
+          </a>
+        </Text>
+        <Text style={{ display: "block" }}>
+          💡 You have questions? Ask us on the {""}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://"
+          >
+            roubzi@roubzi.org
           </a>
         </Text>
 
@@ -167,7 +176,7 @@ const App = ({ isServerInfo }) => {
             rel="noopener noreferrer"
             href="https://roubzi.org"
           >
-            Moralis
+            Roubzi
           </a>
         </Text>
       </Footer>
