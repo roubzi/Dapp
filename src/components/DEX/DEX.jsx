@@ -10,6 +10,9 @@ import { tokenValue } from "helpers/formatters";
 import { getWrappedNative } from "helpers/networks";
 // import { useOneInchQuote } from "react-moralis";
 
+import { useOneInchQuote } from "react-moralis";
+
+
 const styles = {
   card: {
     width: "430px",
@@ -45,7 +48,7 @@ const styles = {
 // Adding custom tokens
 
 const customTokens = {
-    "0xabc454b770cdd7f21f16815d62e2ddacbbf3cbe2": {
+    "RZIGON": {
       address: "0xabc454b770cdd7f21f16815d62e2ddacbbf3cbe2",
       decimals: 18,
       logoURI: "https://bafybeic3wfudggswwjdvuz5jnogwdy6cl7eozz3smudv5dxcdct5xdflam.ipfs.infura-ipfs.io/",
@@ -60,10 +63,9 @@ const customTokens = {
 const nativeAddress = "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee";
 
 const chainIds = {
-  
+
   "0x1": "eth",
   "0x38": "bsc",
-
   "0x89": "polygon",
 
 };
