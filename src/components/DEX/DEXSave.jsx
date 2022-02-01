@@ -393,7 +393,6 @@ function DEX({ chain, customTokens = {} }) {
           onClose={() => setFromModalActive(false)}
           setToken={setFromToken}
           tokenList={tokens}
-
         />
       </Modal>
       <Modal
