@@ -12,6 +12,7 @@ import TokenPrice from "components/TokenPrice";
 import ERC20Balance from "components/ERC20Balance";
 import ERC20Transfers from "components/ERC20Transfers";
 import DEX from "components/DEX";
+import SWAP from "components/DEX";
 import NFTBalance from "components/NFTBalance";
 import Wallet from "components/Wallet";
 import { Layout, Tabs } from "antd";
@@ -66,6 +67,18 @@ const App = ({ isServerInfo }) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isAuthenticated, isWeb3Enabled]);
 
+
+  const customTokens = {
+      "RZIGON": {
+        address: "0xabc454b770cdd7f21f16815d62e2ddacbbf3cbe2",
+        decimals: 18,
+        logoURI: "https://bafybeic3wfudggswwjdvuz5jnogwdy6cl7eozz3smudv5dxcdct5xdflam.ipfs.infura-ipfs.io/",
+        name: "RoubziGon",
+        symbol: "RZIG",
+      },
+    };
+
+
   return (
     <Layout style={{ height: "100vh", overflow: "auto" }}>
       <Router>
@@ -100,10 +113,11 @@ const App = ({ isServerInfo }) => {
               <Tabs defaultActiveKey="1" style={{ alignItems: "center" }}>
 
                 <Tabs.TabPane tab={<span>Polygon</span>} key="3">
-                  <DEX chain="polygon" />
+                  <DEX chain="polygon" customTokens={customTokens} />
                 </Tabs.TabPane>
               </Tabs>
             </Route>
+            
             <Route path="/nftBalance">
               <NFTBalance />
             </Route>

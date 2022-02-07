@@ -12,3 +12,22 @@ Dans App.jsx au niveau des routes ajouter le code suivant pour permettre de swap
     </Tabs.TabPane>
   </Tabs>
 </Route>
+
+
+Dans APP : Ajoute un onglet Swap !
+
+<Route path="/SWAP">
+
+
+<Tabs defaultActiveKey="1" style={{ alignItems: "center" }}>
+
+  <Tabs.TabPane tab={<span>Polygon</span>} key="3">
+    <SWAP chain="polygon" customTokens={customTokens} />
+
+  </Tabs.TabPane>
+</Tabs>
+</Route>
+
+ET du coup dans Menu Item : <Menu.Item key="/SWAP">
+  <NavLink to="/SWAP">🌺 Dex / Old Swap </NavLink>
+</Menu.Item>
