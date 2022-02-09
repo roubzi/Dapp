@@ -27,7 +27,9 @@ function MenuItems() {
       <Menu.Item key="/1inch">
         <NavLink to="/1inch">🦠 Swap RZIG</NavLink>
       </Menu.Item>
-      
+      <Menu.Item key="/RZIDex">
+        <NavLink to="/RZIDex">🌺 RziDex Encyclopedia </NavLink>
+      </Menu.Item>
       <Menu.Item key="/nftBalance">
         <NavLink to="/nftBalance">👾 RZIs & NFTs</NavLink>
       </Menu.Item>

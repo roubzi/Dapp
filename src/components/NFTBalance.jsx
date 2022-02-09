@@ -10,6 +10,9 @@ import { getExplorer } from "helpers/networks";
 import AddressInput from "./AddressInput";
 import { useVerifyMetadata } from "hooks/useVerifyMetadata";
 
+
+
+
 const { Meta } = Card;
 
 const styles = {
@@ -25,8 +28,22 @@ const styles = {
   },
 };
 
+
+
 function NFTBalance() {
-  const { data: NFTBalances } = useNFTBalances();
+//  const { getNFTBalances, data, error} = useNFTBalances();
+
+//  const NFTBalances = () => {
+//    return (
+//      <div>
+//        {error && <>{JSON.stringify(error)}</>}
+//        <button onClick={() => getNFTBalances({ params: { chain: "0xf1667d6bb730065c508b0767d82380952ed55ae7" } })}>Refetch NFTBalances</button>
+//        <pre>{JSON.stringify(data, null, 2)}</pre>
+//      </div>
+//    );
+//  };
+
+const { data: NFTBalances } = useNFTBalances();  // A la place de mon bazar lignes 31 à 44
   const { Moralis, chainId } = useMoralis();
   const [visible, setVisibility] = useState(false);
   const [receiverToSend, setReceiver] = useState(null);

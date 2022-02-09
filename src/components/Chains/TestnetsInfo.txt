@@ -39,3 +39,28 @@
     icon: <BSCLogo />,
   },
 ```
+Others :
+
+{
+  key: "0x1",
+  value: "Ethereum",
+  icon: <ETHLogo />,
+},
+
+{
+  key: "0x38",
+  value: "Binance",
+  icon: <BSCLogo />,
+},
+
+
+{
+  key: "0xa86a",
+  value: "Avalanche",
+  icon: <AvaxLogo />,
+},
+
+
+Dans Chain.jsx, importer les logos :
+
+import { AvaxLogo, PolygonLogo, BSCLogo, ETHLogo } from "./Logos";

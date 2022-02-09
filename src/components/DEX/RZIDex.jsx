@@ -240,4 +240,4 @@ return (
 }
 
 
-export default SWAP;
+export default RZIDex;

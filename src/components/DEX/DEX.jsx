@@ -10,28 +10,6 @@ import { tokenValue } from "helpers/formatters";
 import { getWrappedNative } from "helpers/networks";
 // import { useOneInchQuote } from "react-moralis";
 
-
-
-
-  <DEX chain="polygon" />
-
-
-
-  // Adding custom tokens
-
-  const customTokens = {
-      "RZIGON": {
-        address: "0xabc454b770cdd7f21f16815d62e2ddacbbf3cbe2",
-        decimals: 18,
-        logoURI: "https://bafybeic3wfudggswwjdvuz5jnogwdy6cl7eozz3smudv5dxcdct5xdflam.ipfs.infura-ipfs.io/",
-        name: "RoubziGon",
-        symbol: "RZIG",
-      },
-    };
-
-
-<DEX chain="polygon" customTokens={customTokens} />
-
 const styles = {
   card: {
     width: "430px",

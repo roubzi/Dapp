@@ -14,8 +14,12 @@ Dans App.jsx au niveau des routes ajouter le code suivant pour permettre de swap
 </Route>
 
 
-Dans APP : Ajoute un onglet Swap !
+#############################Dans APP : Ajoute un onglet Swap !
 
+
+Importer : import SWAP from "components/DEX";
+
+puis Copier/coller :###################################
 <Route path="/SWAP">
 
 

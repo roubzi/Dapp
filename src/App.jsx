@@ -12,7 +12,9 @@ import TokenPrice from "components/TokenPrice";
 import ERC20Balance from "components/ERC20Balance";
 import ERC20Transfers from "components/ERC20Transfers";
 import DEX from "components/DEX";
-import SWAP from "components/DEX";
+
+import RZIDex from "components/DEX";
+
 import NFTBalance from "components/NFTBalance";
 import Wallet from "components/Wallet";
 import { Layout, Tabs } from "antd";
@@ -34,6 +36,7 @@ const styles = {
     color: "#041836",
     marginTop: "130px",
     padding: "10px",
+    width : "auto",
   },
   header: {
     position: "fixed",
@@ -45,12 +48,13 @@ const styles = {
     alignItems: "center",
     fontFamily: "Roboto, sans-serif",
     borderBottom: "2px solid rgba(0, 0, 0, 0.06)",
-    padding: "0 10px",
-    boxShadow: "0 1px 10px rgb(151 164 175 / 10%)",
+    padding: "0 5px",
+    boxShadow: "0 1px 10px rgb(151 164 175 / 50%)",
   },
   headerRight: {
     display: "flex",
-    gap: "20px",
+    //width: "full",
+    gap: "15px",
     alignItems: "center",
     fontSize: "15px",
     fontWeight: "600",
@@ -84,18 +88,20 @@ const App = ({ isServerInfo }) => {
       <Router>
         <Header style={styles.header}>
           <Logo />
+
           <MenuItems />
           <div style={styles.headerRight}>
             <Chains />
                         <TokenPrice
-              address="0x1f9840a85d5aF5bf1D1762F925BDADdC4201F984"
-              chain="eth"
+              address="0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270"
+              chain="polygon"
               //image="https://cloudflare-ipfs.com/ipfs/QmQTx2mZwnBgL4cYzasTZ834FA2kLNjtepjnscvWJSk7Jc/"
               image="https://bafybeic3wfudggswwjdvuz5jnogwdy6cl7eozz3smudv5dxcdct5xdflam.ipfs.infura-ipfs.io/"
               size = "40px"
               //height="40px"
               //width="40px"
             />
+            |
             <NativeBalance />
             <Account />
           </div>
@@ -107,7 +113,7 @@ const App = ({ isServerInfo }) => {
               <QuickStart isServerInfo={isServerInfo} />
             </Route>
             <Route path="/wallet">
-              <Wallet />
+              <Wallet chain="polygon"/>
             </Route>
             <Route path="/1inch">
               <Tabs defaultActiveKey="1" style={{ alignItems: "center" }}>
@@ -117,18 +123,21 @@ const App = ({ isServerInfo }) => {
                 </Tabs.TabPane>
               </Tabs>
             </Route>
-            
+
             <Route path="/nftBalance">
-              <NFTBalance />
+              <NFTBalance/>
+            </Route>
+            <Route path="/RZIDex">
+              <RZIDex/>
             </Route>
             <Route path="/erc20balance">
-              <ERC20Balance />
+              <ERC20Balance/>
             </Route>
             <Route path="/onramp">
               <Ramper />
             </Route>
             <Route path="/erc20transfers">
-              <ERC20Transfers />
+              <ERC20Transfers/>
             </Route>
             <Route path="/contract">
               <Contract />
