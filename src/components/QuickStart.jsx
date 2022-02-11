@@ -22,6 +22,7 @@ const styles = {
   },
 };
 
+
 export default function QuickStart({ isServerInfo }) {
   const { Moralis } = useMoralis();
 
@@ -33,100 +34,76 @@ export default function QuickStart({ isServerInfo }) {
         style={styles.card}
         title={
           <>
-            📝 <Text strong>To-Do List</Text>
+          📡 <Text strong>RoubZi Artist</Text>
           </>
         }
       >
         <Timeline mode="left" style={styles.timeline}>
           <Timeline.Item dot="📄">
-            <Text delete style={styles.text}>
-              Clone or fork{" "}
+            <Text style={styles.text}>
+              Involved in a decentralized street art ! Check out our {" "}
               <a
-                href="https://github.com/ethereum-boilerplate/ethereum-boilerplate#-quick-start"
+                href="https://roubzi.org/whitepaper"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => alert("Work in progress")}
               >
-                ethereum-boilerplate
+                White Paper
               </a>{" "}
             </Text>
           </Timeline.Item>
 
-          <Timeline.Item dot="💿">
-            <Text delete style={styles.text}>
-              Install all dependencies: <Text code>npm install</Text>
+          <Timeline.Item dot="🐧">
+            <Text style={styles.text}>
+              Discover our paintings and order them online {" "}
+              <a
+                href="https://roubzi.org/whitepaper"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => alert("Work in progress")}
+              >
+                in our associative art gallery Rescoe.fr
+              </a>{" "}
+
             </Text>
           </Timeline.Item>
 
-          <Timeline.Item dot="🧰">
-            <Text delete={isServerInfo} style={styles.text}>
-              Sign up for a free account on{" "}
+          <Timeline.Item dot="🔎">
+            <Text style={styles.text}>
+              Search and scan our street art around the world to get free RZI Monsters{" "}
               <a
-                href="https://moralis.io?utm_source=boilerplatehosted&utm_medium=todo&utm_campaign=ethereum-boilerplate"
+                href="https://roubzi.org/Tutorials"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Moralis
-              </a>
+              How can I do that ?
+              </a>{" "}
             </Text>
           </Timeline.Item>
 
           <Timeline.Item dot="💾">
-            <Text delete={isServerInfo} style={styles.text}>
-              Create a Moralis Server (
+            <Text style={styles.text}>
+              Find information about our paintings location by checking our {""}
               <a
-                href="https://docs.moralis.io/moralis-server/getting-started/create-a-moralis-server"
+                href="https://www.instagram.com/roubzi_artist/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                How to start Moralis Server
-              </a>
-              )
+                instagram
+              </a>{""}
+
             </Text>
           </Timeline.Item>
 
-          <Timeline.Item dot="🔏">
-            <Text delete={isServerInfo} style={styles.text}>
-              Rename <Text code>.env.example</Text> to <Text code>.env</Text> and provide your <Text strong>appId</Text>{" "}
-              and <Text strong>serverUrl</Text> from{" "}
-              <a
-                href="https://moralis.io?utm_source=boilerplatehosted&utm_medium=todo&utm_campaign=ethereum-boilerplate"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Moralis
-              </a>
-              :
-            </Text>
-            <Text code delete={isServerInfo} style={{ display: "block" }}>
-              REACT_APP_MORALIS_APPLICATION_ID = xxxxxxxxxxxx
-            </Text>
-            <Text code delete={isServerInfo} style={{ display: "block" }}>
-              REACT_APP_MORALIS_SERVER_URL = https://xxxxxx.grandmoralis.com:2053/server
-            </Text>
-          </Timeline.Item>
 
-          <Timeline.Item dot="🔁">
-            <Text delete={isServerInfo} style={styles.text}>
-              Stop the app and start it again <Text code>npm run start</Text>
-            </Text>
-          </Timeline.Item>
 
-          <Timeline.Item dot="💿">
-            <Text delete={isInchDex} style={styles.text}>
-              Install{" "}
-              <a
-                href="https://moralis.io/plugins/1inch/?utm_source=boilerplatehosted&utm_medium=todo&utm_campaign=ethereum-boilerplate"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                1inch Moralis Plugin
-              </a>{" "}
-              needed for the<Text code>{"<InchDex />"}</Text> component (optional)
-            </Text>
-          </Timeline.Item>
+
+
 
           <Timeline.Item dot="🚀">
-            <Text style={styles.text}>BUIDL!!!</Text>
+          <Text style={styles.text}>Join the</Text>
+
+            <Text style={styles.text}> Street art 3.0 </Text>
           </Timeline.Item>
         </Timeline>
       </Card>
