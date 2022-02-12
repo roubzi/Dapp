@@ -35,10 +35,6 @@ function MenuItems() {
       <NavLink to="/RZIDex">🎣RziDex </NavLink>
     </Menu.Item>
 
-    <Menu.Item key="/nftBalance">
-      <NavLink to="/nftBalance">👾RZIs collection</NavLink>
-    </Menu.Item>
-
     <Menu.Item key="/erc20balance">
       <NavLink to="/erc20balance">🍯Balances</NavLink>
     </Menu.Item>

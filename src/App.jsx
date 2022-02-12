@@ -14,7 +14,6 @@ import ERC20Transfers from "components/ERC20Transfers";
 import DEX from "components/DEX";
 import RZIDex from "components/RZIDex"
 
-import NFTBalance from "components/NFTBalance";
 import Wallet from "components/Wallet";
 import { Layout, Tabs } from "antd";
 import "antd/dist/antd.css";
@@ -125,9 +124,6 @@ const App = ({ isServerInfo }) => {
             <Route path="/RZIDex">
               <RZIDex/>
             </Route>
-            <Route path="/nftBalance">
-              <NFTBalance/>
-            </Route>
             <Route path="/erc20balance">
               <ERC20Balance/>
             </Route>
@@ -191,6 +187,10 @@ const App = ({ isServerInfo }) => {
           >
             Roubzi
           </a>
+        </Text>
+        <Text style={{ display: "block" }}>
+
+        Sorry for the syntax, we are french artists, and the english courses was used to draw and code !
         </Text>
       </Footer>
     </Layout>
