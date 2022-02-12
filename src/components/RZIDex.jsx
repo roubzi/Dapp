@@ -30,7 +30,7 @@ const styles = {
 
 
 
-function RZIDex() {
+function NFTBalance() {
 //  const { getNFTBalances, data, error} = useNFTBalances();
 
 //  const NFTBalances = () => {
@@ -159,4 +159,4 @@ const { data: NFTBalances } = useNFTBalances();  // A la place de mon bazar lign
   );
 }
 
-export default RZIDex;
+export default NFTBalance;

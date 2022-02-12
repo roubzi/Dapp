@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Menu, Dropdown, Button } from "antd";
 import { DownOutlined } from "@ant-design/icons";
-import {PolygonLogo} from "./Logos";
+import {PolygonLogo, ETHLogo} from "./Logos";
 import { useChain, useMoralis } from "react-moralis";
 
 const styles = {
@@ -32,6 +32,16 @@ const menuItems = [
     key: "0x13881",
     value: "Mumbai",
     icon: <PolygonLogo />,
+  },
+  {
+    key: "0x1",
+    value: "Ethereum",
+    icon: <ETHLogo />,
+  },
+  {
+    key: "0x3",
+    value: "Ropsten Testnet",
+    icon: <ETHLogo />,
   }
 
 ];

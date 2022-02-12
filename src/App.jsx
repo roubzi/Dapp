@@ -12,6 +12,7 @@ import TokenPrice from "components/TokenPrice";
 import ERC20Balance from "components/ERC20Balance";
 import ERC20Transfers from "components/ERC20Transfers";
 import DEX from "components/DEX";
+import RZIDex from "components/RZIDex"
 
 import NFTBalance from "components/NFTBalance";
 import Wallet from "components/Wallet";
@@ -92,7 +93,7 @@ const App = ({ isServerInfo }) => {
             <Chains />
                         <TokenPrice
               address="0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270"
-              chain="polygon"
+              chain="POLYGON"
               //image="https://cloudflare-ipfs.com/ipfs/QmQTx2mZwnBgL4cYzasTZ834FA2kLNjtepjnscvWJSk7Jc/"
               image="https://bafybeic3wfudggswwjdvuz5jnogwdy6cl7eozz3smudv5dxcdct5xdflam.ipfs.infura-ipfs.io/"
               size = "40px"
@@ -121,7 +122,9 @@ const App = ({ isServerInfo }) => {
                 </Tabs.TabPane>
               </Tabs>
             </Route>
-
+            <Route path="/RZIDex">
+              <RZIDex/>
+            </Route>
             <Route path="/nftBalance">
               <NFTBalance/>
             </Route>
@@ -138,9 +141,6 @@ const App = ({ isServerInfo }) => {
               <Contract />
             </Route>
             <Route path="/">
-              <Redirect to="/quickstart" />
-            </Route>
-            <Route path="/ethereum-boilerplate">
               <Redirect to="/quickstart" />
             </Route>
             <Route path="/nonauthenticated">
